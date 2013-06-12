@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F590EF2-B01A-4250-829B-5B61D386759B}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App5</RootNamespace>
+    <AssemblyName>App5</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>App5_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BitmapTextBlock.cs" />
+    <Compile Include="BitmapTextBlock_2.cs" />
+    <Compile Include="BlankPage1.xaml.cs">
+      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BindableBase.cs" />
+    <Compile Include="Common\BooleanNegationConverter.cs" />
+    <Compile Include="Common\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Common\LayoutAwarePage.cs" />
+    <Compile Include="Common\RichTextColumns.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="App5_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="150_150.png" />
+    <Content Include="30_30.png" />
+    <Content Include="310_150.png" />
+    <Content Include="620_300.png" />
+    <Content Include="Assets\background.png" />
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\MB_0006_back.ico" />
+    <Content Include="Assets\SmallLogo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\大圆.png" />
+    <Content Include="Assets\小圆.png" />
+    <Content Include="Common\ReadMe.txt" />
+    <Content Include="Data\临潼骊山\Bus route\01.png" />
+    <Content Include="Data\临潼骊山\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\临潼骊山\Picture route\01.png" />
+    <Content Include="Data\临潼骊山\Pictures\01.jpg" />
+    <Content Include="Data\临潼骊山\Pictures\02.jpg" />
+    <Content Include="Data\临潼骊山\Pictures\03.jpg" />
+    <Content Include="Data\临潼骊山\Pictures\04.jpg" />
+    <Content Include="Data\临潼骊山\Pictures\05.jpg" />
+    <Content Include="Data\临潼骊山\Scenic Introduction.txt" />
+    <Content Include="Data\临潼骊山\Theme.PNG" />
+    <Content Include="Data\临潼骊山\Warm tip.txt" />
+    <Content Include="Data\兵马俑\Bus route\bus.jpg" />
+    <Content Include="Data\兵马俑\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\兵马俑\Picture route\root.jpg" />
+    <Content Include="Data\兵马俑\Pictures\05.jpg" />
+    <Content Include="Data\兵马俑\Pictures\01.jpg" />
+    <Content Include="Data\兵马俑\Pictures\02.jpg" />
+    <Content Include="Data\兵马俑\Pictures\03.jpg" />
+    <Content Include="Data\兵马俑\Pictures\04.jpg" />
+    <Content Include="Data\兵马俑\Scenic Introduction.txt" />
+    <Content Include="Data\兵马俑\Theme.jpg" />
+    <Content Include="Data\兵马俑\Warm tip.txt" />
+    <Content Include="Data\华清池\Bus route\01.png" />
+    <Content Include="Data\华清池\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\华清池\Picture route\01.png" />
+    <Content Include="Data\华清池\Pictures\01.jpg" />
+    <Content Include="Data\华清池\Pictures\02.jpg" />
+    <Content Include="Data\华清池\Pictures\03.jpg" />
+    <Content Include="Data\华清池\Pictures\04.jpg" />
+    <Content Include="Data\华清池\Pictures\05.jpg" />
+    <Content Include="Data\华清池\Scenic Introduction.txt" />
+    <Content Include="Data\华清池\theme.jpg" />
+    <Content Include="Data\华清池\Warm tip.txt" />
+    <Content Include="Data\大唐芙蓉园\Bus route\01.png" />
+    <Content Include="Data\大唐芙蓉园\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\大唐芙蓉园\Picture route\01.png" />
+    <Content Include="Data\大唐芙蓉园\Pictures\01.jpg" />
+    <Content Include="Data\大唐芙蓉园\Pictures\02.jpg" />
+    <Content Include="Data\大唐芙蓉园\Pictures\03.jpg" />
+    <Content Include="Data\大唐芙蓉园\Pictures\04.jpg" />
+    <Content Include="Data\大唐芙蓉园\Pictures\05.jpg" />
+    <Content Include="Data\大唐芙蓉园\Scenic Introduction.txt" />
+    <Content Include="Data\大唐芙蓉园\Theme.jpg" />
+    <Content Include="Data\大唐芙蓉园\Warm tip.txt" />
+    <Content Include="Data\大雁塔\Bus route\01.PNG" />
+    <Content Include="Data\大雁塔\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\大雁塔\Picture route\01.PNG" />
+    <Content Include="Data\大雁塔\Pictures\01.jpg" />
+    <Content Include="Data\大雁塔\Pictures\02.jpg" />
+    <Content Include="Data\大雁塔\Pictures\03.jpg" />
+    <Content Include="Data\大雁塔\Pictures\04.jpg" />
+    <Content Include="Data\大雁塔\Pictures\05.jpg" />
+    <Content Include="Data\大雁塔\Pictures\instruction.txt" />
+    <Content Include="Data\大雁塔\Pictures\warn tip.txt" />
+    <Content Include="Data\大雁塔\Pictures\门票.txt" />
+    <Content Include="Data\大雁塔\Scenic Introduction.txt" />
+    <Content Include="Data\大雁塔\Theme.jpg" />
+    <Content Include="Data\大雁塔\Warm tip.txt" />
+    <Content Include="Data\太平森林公园\Bus route\01.png" />
+    <Content Include="Data\太平森林公园\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\太平森林公园\Picture route\01.png" />
+    <Content Include="Data\太平森林公园\Pictures\01.png" />
+    <Content Include="Data\太平森林公园\Pictures\02.png" />
+    <Content Include="Data\太平森林公园\Pictures\03.png" />
+    <Content Include="Data\太平森林公园\Pictures\04.png" />
+    <Content Include="Data\太平森林公园\Pictures\05.png" />
+    <Content Include="Data\太平森林公园\Scenic Introduction.txt" />
+    <Content Include="Data\太平森林公园\Theme.jpg" />
+    <Content Include="Data\太平森林公园\Warm tip.txt" />
+    <Content Include="Data\明城墙\Bus route\01.png" />
+    <Content Include="Data\明城墙\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\明城墙\Picture route\01.png" />
+    <Content Include="Data\明城墙\Pictures\01.jpg" />
+    <Content Include="Data\明城墙\Pictures\02.jpg" />
+    <Content Include="Data\明城墙\Pictures\03.jpg" />
+    <Content Include="Data\明城墙\Pictures\04.jpg" />
+    <Content Include="Data\明城墙\Pictures\05.jpg" />
+    <Content Include="Data\明城墙\Scenic Introduction.txt" />
+    <Content Include="Data\明城墙\Theme.jpg" />
+    <Content Include="Data\明城墙\Warm tip.txt" />
+    <Content Include="Data\朱雀森林公园\Bus route\01.png" />
+    <Content Include="Data\朱雀森林公园\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\朱雀森林公园\Picture route\01.png" />
+    <Content Include="Data\朱雀森林公园\Pictures\01.png" />
+    <Content Include="Data\朱雀森林公园\Pictures\02.png" />
+    <Content Include="Data\朱雀森林公园\Pictures\03.png" />
+    <Content Include="Data\朱雀森林公园\Pictures\04.png" />
+    <Content Include="Data\朱雀森林公园\Pictures\05.png" />
+    <Content Include="Data\朱雀森林公园\Scenic Introduction.txt" />
+    <Content Include="Data\朱雀森林公园\Theme.jpg" />
+    <Content Include="Data\朱雀森林公园\Warm tip.txt" />
+    <Content Include="Data\柞水溶洞\Bus route\01.PNG" />
+    <Content Include="Data\柞水溶洞\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\柞水溶洞\Picture route\01.PNG" />
+    <Content Include="Data\柞水溶洞\Pictures\01.jpg" />
+    <Content Include="Data\柞水溶洞\Pictures\02.JPG" />
+    <Content Include="Data\柞水溶洞\Pictures\03.JPG" />
+    <Content Include="Data\柞水溶洞\Pictures\04.JPG" />
+    <Content Include="Data\柞水溶洞\Pictures\05.JPG" />
+    <Content Include="Data\柞水溶洞\Scenic Introduction.txt" />
+    <Content Include="Data\柞水溶洞\Theme.jpeg" />
+    <Content Include="Data\柞水溶洞\Warm tip.txt" />
+    <Content Include="Data\翠华山\Bus route\01.jpg" />
+    <Content Include="Data\翠华山\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\翠华山\Picture route\01.jpg" />
+    <Content Include="Data\翠华山\Pictures\01.png" />
+    <Content Include="Data\翠华山\Pictures\02.png" />
+    <Content Include="Data\翠华山\Pictures\03.png" />
+    <Content Include="Data\翠华山\Pictures\04.png" />
+    <Content Include="Data\翠华山\Pictures\05.png" />
+    <Content Include="Data\翠华山\Scenic Introduction.txt" />
+    <Content Include="Data\翠华山\Theme.png" />
+    <Content Include="Data\翠华山\Warm tip.txt" />
+    <Content Include="Data\曲江海洋公园\Bus route\01.png" />
+    <Content Include="Data\曲江海洋公园\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\曲江海洋公园\Picture route\01.png" />
+    <Content Include="Data\曲江海洋公园\Pictures\01.jpg" />
+    <Content Include="Data\曲江海洋公园\Pictures\02.jpg" />
+    <Content Include="Data\曲江海洋公园\Pictures\03.jpg" />
+    <Content Include="Data\曲江海洋公园\Pictures\04.jpg" />
+    <Content Include="Data\曲江海洋公园\Pictures\05.jpg" />
+    <Content Include="Data\曲江海洋公园\Scenic Introduction.txt" />
+    <Content Include="Data\曲江海洋公园\Theme.png" />
+    <Content Include="Data\曲江海洋公园\Warm tip.txt" />
+    <Content Include="Data\阿房宫遗址\Bus route\01.png" />
+    <Content Include="Data\阿房宫遗址\Entrance ticket&amp;time.txt" />
+    <Content Include="Data\阿房宫遗址\Picture route\01.png" />
+    <Content Include="Data\阿房宫遗址\Pictures\01.png" />
+    <Content Include="Data\阿房宫遗址\Pictures\02.png" />
+    <Content Include="Data\阿房宫遗址\Pictures\03.png" />
+    <Content Include="Data\阿房宫遗址\Pictures\04.png" />
+    <Content Include="Data\阿房宫遗址\Pictures\05.png" />
+    <Content Include="Data\阿房宫遗址\Scenic Introduction.txt" />
+    <Content Include="Data\阿房宫遗址\Theme.png" />
+    <Content Include="Data\阿房宫遗址\Warm tip.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="BlankPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
